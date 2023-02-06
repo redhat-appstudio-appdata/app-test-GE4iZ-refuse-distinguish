@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: app-test-devfile-sample-code-with-quarkus-xnrm-sample
+  namespace: sbudhwar-1-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: env
+          value: development
+        image: quay.io/redhat-appstudio/user-workload@sha256:6070c3771bcba9b7b3627e6900ace6c9b6635fce36a5bb90db5b315b843e006d
+        name: container-image
+        resources: {}
+status: {}
