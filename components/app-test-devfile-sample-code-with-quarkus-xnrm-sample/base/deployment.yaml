@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: app-test-devfile-sample-code-with-quarkus-xnrm-sample
     spec:
       containers:
-      - image: quay.io/redhat-appstudio/user-workload:sbudhwar-1-tenant-app-test-devfile-sample-code-with-quarkus-xnrm-sample
+      - image: quay.io/redhat-appstudio/user-workload@sha256:6070c3771bcba9b7b3627e6900ace6c9b6635fce36a5bb90db5b315b843e006d
         imagePullPolicy: Always
         livenessProbe:
           httpGet:
